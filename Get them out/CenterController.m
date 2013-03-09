@@ -6,18 +6,19 @@
 //  Copyright (c) 2013 Martin Bartusek. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CenterController.h"
+#import "IIViewDeckController.h"
 
-@interface ViewController ()
+@interface CenterController ()
 
 @end
 
-@implementation ViewController
+@implementation CenterController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning

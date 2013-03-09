@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in Get them outTests");
+    STAssertFalse(1 == 2, @"Tests are working");
 }
 
 @end
