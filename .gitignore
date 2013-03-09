@@ -1,18 +1,18 @@
-# global unwanted files #
-#########################
+# Xcode
 .DS_Store
-
-# ios builded files #
-##################### 
-*.xcuserdatad
-*.xcuserstate
-*.DS_Store
-taxi.xcodeproj/project.xcworkspace/xcuserdata/kraag22.xcuserdatad/WorkspaceSettings.xcsettings
-taxi.xcodeproj/project.xcworkspace/xcuserdata/kraag22.xcuserdatad/UserInterfaceState.xcuserstate
-taxi.xcodeproj/xcuserdata/kraag22.xcuserdatad/
-Resources/WireFrames/WireFrames.xcodeproj/project.xcworkspace/
-Breakpoints.xcbkptlist
 build/
-
-Thumbs.db
-UserInterfaceState.xcuserstate
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
