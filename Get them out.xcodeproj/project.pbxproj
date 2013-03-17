@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7761641F16F60F0F0087B58A /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761641D16F60F0F0087B58A /* LeftViewController.m */; };
+		7761642016F60F0F0087B58A /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7761641E16F60F0F0087B58A /* LeftViewController.xib */; };
+		7761642416F60F510087B58A /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761642216F60F500087B58A /* RightViewController.m */; };
+		7761642516F60F510087B58A /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7761642316F60F500087B58A /* RightViewController.xib */; };
 		778E761616EB5542001B859D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E761516EB5542001B859D /* UIKit.framework */; };
 		778E761816EB5542001B859D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E761716EB5542001B859D /* Foundation.framework */; };
 		778E761A16EB5542001B859D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E761916EB5542001B859D /* CoreGraphics.framework */; };
@@ -39,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7761641C16F60F0F0087B58A /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		7761641D16F60F0F0087B58A /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		7761641E16F60F0F0087B58A /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		7761642116F60F500087B58A /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		7761642216F60F500087B58A /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		7761642316F60F500087B58A /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
 		778E761216EB5542001B859D /* Get them out.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get them out.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778E761516EB5542001B859D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		778E761716EB5542001B859D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +140,12 @@
 				778E765816EB5D89001B859D /* Libs */,
 				778E762416EB5542001B859D /* AppDelegate.h */,
 				778E762516EB5542001B859D /* AppDelegate.m */,
+				7761641C16F60F0F0087B58A /* LeftViewController.h */,
+				7761641D16F60F0F0087B58A /* LeftViewController.m */,
+				7761641E16F60F0F0087B58A /* LeftViewController.xib */,
+				7761642116F60F500087B58A /* RightViewController.h */,
+				7761642216F60F500087B58A /* RightViewController.m */,
+				7761642316F60F500087B58A /* RightViewController.xib */,
 				778E762D16EB5542001B859D /* CenterController.h */,
 				778E762E16EB5542001B859D /* CenterController.m */,
 				778E763016EB5542001B859D /* CenterController.xib */,
@@ -258,6 +274,8 @@
 				778E762A16EB5542001B859D /* Default@2x.png in Resources */,
 				778E762C16EB5542001B859D /* Default-568h@2x.png in Resources */,
 				778E763216EB5542001B859D /* CenterController.xib in Resources */,
+				7761642016F60F0F0087B58A /* LeftViewController.xib in Resources */,
+				7761642516F60F510087B58A /* RightViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +315,8 @@
 				778E762F16EB5542001B859D /* CenterController.m in Sources */,
 				778E765416EB5D0F001B859D /* IIViewDeckController.m in Sources */,
 				778E765716EB5D58001B859D /* IIWrapController.m in Sources */,
+				7761641F16F60F0F0087B58A /* LeftViewController.m in Sources */,
+				7761642416F60F510087B58A /* RightViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +497,7 @@
 				778E764C16EB5543001B859D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		778E764D16EB5543001B859D /* Build configuration list for PBXNativeTarget "Get them outTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +506,7 @@
 				778E764F16EB5543001B859D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

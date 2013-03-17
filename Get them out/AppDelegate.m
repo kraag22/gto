@@ -10,6 +10,8 @@
 
 #import "CenterController.h"
 #import "IIViewDeckController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
 
 @implementation AppDelegate
 
@@ -18,15 +20,15 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    //self.leftController = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
-    //RightViewController* rightController = [[RightViewController alloc] initWithNibName:@"RightViewController" bundle:nil];
+    self.leftController = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
+    self.rightController = [[RightViewController alloc] initWithNibName:@"RightViewController" bundle:nil];
     
     CenterController *centerController = [[CenterController alloc] initWithNibName:@"CenterController" bundle:nil];
     self.centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
     IIViewDeckController *deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController
-                                                                                    leftViewController:nil
-                                                                                   rightViewController:nil];
-    deckController.rightSize = 100;
+                                                                                    leftViewController:self.leftController
+                                                                                   rightViewController:self.rightController];
+    //deckController.rightSize = 100;
     
     /* To adjust speed of open/close animations, set either of these two properties. */
     // deckController.openSlideAnimationDuration = 0.15f;

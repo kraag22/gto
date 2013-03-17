@@ -18,6 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.view setBackgroundColor:[UIColor colorWithRed:47.0f/256.0f green:69.0f/256.0f blue:86.0f/256.0f alpha:1]];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:21.0f/256.0f green:33.0f/256.0f blue:51.0f/256.0f alpha:1];
+    self.navigationController.navigationBar.topItem.title = NSLocalizedString(@"Get them out", nil);
 
 }
 
