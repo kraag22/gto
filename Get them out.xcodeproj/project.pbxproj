@@ -30,6 +30,8 @@
 		778E765116EB5D05001B859D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E765016EB5D05001B859D /* QuartzCore.framework */; };
 		778E765416EB5D0F001B859D /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778E765316EB5D0F001B859D /* IIViewDeckController.m */; };
 		778E765716EB5D58001B859D /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778E765616EB5D58001B859D /* IIWrapController.m */; };
+		77B3CC7316FDE11E000D2744 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B3CC7216FDE11E000D2744 /* icon_57.png */; };
+		77B3CC7516FDE124000D2744 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B3CC7416FDE124000D2744 /* icon_114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		778E765316EB5D0F001B859D /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
 		778E765516EB5D58001B859D /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
 		778E765616EB5D58001B859D /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		77B3CC7216FDE11E000D2744 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_57.png; path = ../icon_57.png; sourceTree = "<group>"; };
+		77B3CC7416FDE124000D2744 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_114.png; path = ../icon_114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 				778E762716EB5542001B859D /* Default.png */,
 				778E762916EB5542001B859D /* Default@2x.png */,
 				778E762B16EB5542001B859D /* Default-568h@2x.png */,
+				77B3CC7416FDE124000D2744 /* icon_114.png */,
+				77B3CC7216FDE11E000D2744 /* icon_57.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -276,6 +282,8 @@
 				778E763216EB5542001B859D /* CenterController.xib in Resources */,
 				7761642016F60F0F0087B58A /* LeftViewController.xib in Resources */,
 				7761642516F60F510087B58A /* RightViewController.xib in Resources */,
+				77B3CC7316FDE11E000D2744 /* icon_57.png in Resources */,
+				77B3CC7516FDE124000D2744 /* icon_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
