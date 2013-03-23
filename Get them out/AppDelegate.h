@@ -18,4 +18,7 @@
 @property (strong, nonatomic) UIViewController *leftController;
 @property (strong, nonatomic) UIViewController *rightController;
 
+@property (strong, nonatomic) UIManagedDocument *document;
+@property (strong, nonatomic) NSManagedObjectContext *context;
+
 @end

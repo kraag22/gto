@@ -32,6 +32,13 @@
 		778E765716EB5D58001B859D /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778E765616EB5D58001B859D /* IIWrapController.m */; };
 		77B3CC7316FDE11E000D2744 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B3CC7216FDE11E000D2744 /* icon_57.png */; };
 		77B3CC7516FDE124000D2744 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B3CC7416FDE124000D2744 /* icon_114.png */; };
+		77B3CC7816FDF2FD000D2744 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77B3CC7616FDF2FD000D2744 /* Model.xcdatamodeld */; };
+		77B3CC8216FDF94C000D2744 /* Lens+addons.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3CC8116FDF94B000D2744 /* Lens+addons.m */; };
+		77B3CC8B16FDF9EE000D2744 /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3CC8A16FDF9EE000D2744 /* Lens.m */; };
+		77B3CC8E16FDF9EE000D2744 /* LensRemovedDays.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3CC8D16FDF9EE000D2744 /* LensRemovedDays.m */; };
+		77B3CC9016FDFA18000D2744 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B3CC8F16FDFA18000D2744 /* CoreData.framework */; };
+		77B3CC9316FDFB16000D2744 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3CC9216FDFB16000D2744 /* ModelTests.m */; };
+		77B3CC9416FE149F000D2744 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B3CC8F16FDFA18000D2744 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +87,16 @@
 		778E765616EB5D58001B859D /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
 		77B3CC7216FDE11E000D2744 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_57.png; path = ../icon_57.png; sourceTree = "<group>"; };
 		77B3CC7416FDE124000D2744 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_114.png; path = ../icon_114.png; sourceTree = "<group>"; };
+		77B3CC7716FDF2FD000D2744 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		77B3CC8016FDF94B000D2744 /* Lens+addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lens+addons.h"; sourceTree = "<group>"; };
+		77B3CC8116FDF94B000D2744 /* Lens+addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lens+addons.m"; sourceTree = "<group>"; };
+		77B3CC8916FDF9EE000D2744 /* Lens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lens.h; sourceTree = "<group>"; };
+		77B3CC8A16FDF9EE000D2744 /* Lens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lens.m; sourceTree = "<group>"; };
+		77B3CC8C16FDF9EE000D2744 /* LensRemovedDays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LensRemovedDays.h; sourceTree = "<group>"; };
+		77B3CC8D16FDF9EE000D2744 /* LensRemovedDays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LensRemovedDays.m; sourceTree = "<group>"; };
+		77B3CC8F16FDFA18000D2744 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		77B3CC9116FDFB16000D2744 /* ModelTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTests.h; sourceTree = "<group>"; };
+		77B3CC9216FDFB16000D2744 /* ModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B3CC9016FDFA18000D2744 /* CoreData.framework in Frameworks */,
 				778E765116EB5D05001B859D /* QuartzCore.framework in Frameworks */,
 				778E761616EB5542001B859D /* UIKit.framework in Frameworks */,
 				778E761816EB5542001B859D /* Foundation.framework in Frameworks */,
@@ -98,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B3CC9416FE149F000D2744 /* CoreData.framework in Frameworks */,
 				778E763A16EB5542001B859D /* SenTestingKit.framework in Frameworks */,
 				778E763B16EB5542001B859D /* UIKit.framework in Frameworks */,
 				778E763C16EB5542001B859D /* Foundation.framework in Frameworks */,
@@ -129,6 +148,7 @@
 		778E761416EB5542001B859D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77B3CC8F16FDFA18000D2744 /* CoreData.framework */,
 				778E765016EB5D05001B859D /* QuartzCore.framework */,
 				778E761516EB5542001B859D /* UIKit.framework */,
 				778E761716EB5542001B859D /* Foundation.framework */,
@@ -141,6 +161,7 @@
 		778E761B16EB5542001B859D /* Get them out */ = {
 			isa = PBXGroup;
 			children = (
+				77B3CC7916FDF7EB000D2744 /* Model */,
 				778E765816EB5D89001B859D /* Libs */,
 				778E762416EB5542001B859D /* AppDelegate.h */,
 				778E762516EB5542001B859D /* AppDelegate.m */,
@@ -177,9 +198,11 @@
 		778E763F16EB5542001B859D /* Get them outTests */ = {
 			isa = PBXGroup;
 			children = (
+				778E764016EB5542001B859D /* Supporting Files */,
 				778E764516EB5542001B859D /* Get_them_outTests.h */,
 				778E764616EB5543001B859D /* Get_them_outTests.m */,
-				778E764016EB5542001B859D /* Supporting Files */,
+				77B3CC9116FDFB16000D2744 /* ModelTests.h */,
+				77B3CC9216FDFB16000D2744 /* ModelTests.m */,
 			);
 			path = "Get them outTests";
 			sourceTree = "<group>";
@@ -202,6 +225,20 @@
 				778E765316EB5D0F001B859D /* IIViewDeckController.m */,
 			);
 			name = Libs;
+			sourceTree = "<group>";
+		};
+		77B3CC7916FDF7EB000D2744 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77B3CC7616FDF2FD000D2744 /* Model.xcdatamodeld */,
+				77B3CC8C16FDF9EE000D2744 /* LensRemovedDays.h */,
+				77B3CC8D16FDF9EE000D2744 /* LensRemovedDays.m */,
+				77B3CC8916FDF9EE000D2744 /* Lens.h */,
+				77B3CC8A16FDF9EE000D2744 /* Lens.m */,
+				77B3CC8016FDF94B000D2744 /* Lens+addons.h */,
+				77B3CC8116FDF94B000D2744 /* Lens+addons.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +362,10 @@
 				778E765716EB5D58001B859D /* IIWrapController.m in Sources */,
 				7761641F16F60F0F0087B58A /* LeftViewController.m in Sources */,
 				7761642416F60F510087B58A /* RightViewController.m in Sources */,
+				77B3CC7816FDF2FD000D2744 /* Model.xcdatamodeld in Sources */,
+				77B3CC8216FDF94C000D2744 /* Lens+addons.m in Sources */,
+				77B3CC8B16FDF9EE000D2744 /* Lens.m in Sources */,
+				77B3CC8E16FDF9EE000D2744 /* LensRemovedDays.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				778E764716EB5543001B859D /* Get_them_outTests.m in Sources */,
+				77B3CC9316FDFB16000D2744 /* ModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +559,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77B3CC7616FDF2FD000D2744 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77B3CC7716FDF2FD000D2744 /* Model.xcdatamodel */,
+			);
+			currentVersion = 77B3CC7716FDF2FD000D2744 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 778E760A16EB5542001B859D /* Project object */;
 }

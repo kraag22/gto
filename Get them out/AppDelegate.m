@@ -18,26 +18,57 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    self.leftController = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
-    self.rightController = [[RightViewController alloc] initWithNibName:@"RightViewController" bundle:nil];
-    
-    CenterController *centerController = [[CenterController alloc] initWithNibName:@"CenterController" bundle:nil];
-    self.centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
-    IIViewDeckController *deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController
-                                                                                    leftViewController:self.leftController
-                                                                                   rightViewController:self.rightController];
-    //deckController.rightSize = 100;
-    
-    /* To adjust speed of open/close animations, set either of these two properties. */
-    // deckController.openSlideAnimationDuration = 0.15f;
-    // deckController.closeSlideAnimationDuration = 0.5f;
-    
-    self.window.rootViewController = deckController;
-    [self.window makeKeyAndVisible];
+    [self initCoreData];
     
     return YES;
+}
+
+- (void)initCoreData {
+    
+    NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    url = [url URLByAppendingPathComponent:@"dataModel"];
+    
+    self.document = [[UIManagedDocument alloc] initWithFileURL:url];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[url path]]) {
+        [self.document openWithCompletionHandler:^(BOOL success) {
+            if (success) {
+                [self documentIsReady];
+            }
+        }];
+    } else {
+        [self.document saveToURL:url forSaveOperation:UIDocumentSaveForCreating
+          completionHandler:^(BOOL success) {
+              if (success) {
+                [self documentIsReady];
+              }
+          }];
+    }
+}
+
+- (void)documentIsReady {
+    if (self.document.documentState == UIDocumentStateNormal) {
+        self.context = self.document.managedObjectContext;
+        
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        self.leftController = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
+        self.rightController = [[RightViewController alloc] initWithNibName:@"RightViewController" bundle:nil];
+        
+        CenterController *centerController = [[CenterController alloc] initWithNibName:@"CenterController" bundle:nil];
+        self.centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
+        IIViewDeckController *deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController
+                                                                                        leftViewController:self.leftController
+                                                                                       rightViewController:self.rightController];
+        //deckController.rightSize = 100;
+        
+        /* To adjust speed of open/close animations, set either of these two properties. */
+        // deckController.openSlideAnimationDuration = 0.15f;
+        // deckController.closeSlideAnimationDuration = 0.5f;
+        
+        self.window.rootViewController = deckController;
+        [self.window makeKeyAndVisible];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
