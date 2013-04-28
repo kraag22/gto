@@ -11,6 +11,8 @@
 		7761642016F60F0F0087B58A /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7761641E16F60F0F0087B58A /* LeftViewController.xib */; };
 		7761642416F60F510087B58A /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761642216F60F500087B58A /* RightViewController.m */; };
 		7761642516F60F510087B58A /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7761642316F60F500087B58A /* RightViewController.xib */; };
+		77745C29172D57D40017F4E1 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77745C26172D57D40017F4E1 /* IIViewDeckController.m */; };
+		77745C2A172D57D40017F4E1 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77745C28172D57D40017F4E1 /* IIWrapController.m */; };
 		778E761616EB5542001B859D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E761516EB5542001B859D /* UIKit.framework */; };
 		778E761816EB5542001B859D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E761716EB5542001B859D /* Foundation.framework */; };
 		778E761A16EB5542001B859D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E761916EB5542001B859D /* CoreGraphics.framework */; };
@@ -28,8 +30,6 @@
 		778E764416EB5542001B859D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 778E764216EB5542001B859D /* InfoPlist.strings */; };
 		778E764716EB5543001B859D /* Get_them_outTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 778E764616EB5543001B859D /* Get_them_outTests.m */; };
 		778E765116EB5D05001B859D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E765016EB5D05001B859D /* QuartzCore.framework */; };
-		778E765416EB5D0F001B859D /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778E765316EB5D0F001B859D /* IIViewDeckController.m */; };
-		778E765716EB5D58001B859D /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778E765616EB5D58001B859D /* IIWrapController.m */; };
 		77B3CC7316FDE11E000D2744 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B3CC7216FDE11E000D2744 /* icon_57.png */; };
 		77B3CC7516FDE124000D2744 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B3CC7416FDE124000D2744 /* icon_114.png */; };
 		77B3CC7816FDF2FD000D2744 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77B3CC7616FDF2FD000D2744 /* Model.xcdatamodeld */; };
@@ -58,6 +58,10 @@
 		7761642116F60F500087B58A /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
 		7761642216F60F500087B58A /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 		7761642316F60F500087B58A /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
+		77745C25172D57D40017F4E1 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIViewDeckController.h; path = libs/viewdeck/IIViewDeckController.h; sourceTree = "<group>"; };
+		77745C26172D57D40017F4E1 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIViewDeckController.m; path = libs/viewdeck/IIViewDeckController.m; sourceTree = "<group>"; };
+		77745C27172D57D40017F4E1 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIWrapController.h; path = libs/viewdeck/IIWrapController.h; sourceTree = "<group>"; };
+		77745C28172D57D40017F4E1 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIWrapController.m; path = libs/viewdeck/IIWrapController.m; sourceTree = "<group>"; };
 		778E761216EB5542001B859D /* Get them out.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get them out.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778E761516EB5542001B859D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		778E761716EB5542001B859D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,10 +85,6 @@
 		778E764516EB5542001B859D /* Get_them_outTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Get_them_outTests.h; sourceTree = "<group>"; };
 		778E764616EB5543001B859D /* Get_them_outTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Get_them_outTests.m; sourceTree = "<group>"; };
 		778E765016EB5D05001B859D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		778E765216EB5D0F001B859D /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
-		778E765316EB5D0F001B859D /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
-		778E765516EB5D58001B859D /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
-		778E765616EB5D58001B859D /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
 		77B3CC7216FDE11E000D2744 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_57.png; path = ../icon_57.png; sourceTree = "<group>"; };
 		77B3CC7416FDE124000D2744 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_114.png; path = ../icon_114.png; sourceTree = "<group>"; };
 		77B3CC7716FDF2FD000D2744 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -126,6 +126,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77745C24172D57C30017F4E1 /* viewdeck */ = {
+			isa = PBXGroup;
+			children = (
+				77745C25172D57D40017F4E1 /* IIViewDeckController.h */,
+				77745C26172D57D40017F4E1 /* IIViewDeckController.m */,
+				77745C27172D57D40017F4E1 /* IIWrapController.h */,
+				77745C28172D57D40017F4E1 /* IIWrapController.m */,
+			);
+			name = viewdeck;
+			sourceTree = "<group>";
+		};
 		778E760916EB5542001B859D = {
 			isa = PBXGroup;
 			children = (
@@ -219,10 +230,7 @@
 		778E765816EB5D89001B859D /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				778E765516EB5D58001B859D /* IIWrapController.h */,
-				778E765616EB5D58001B859D /* IIWrapController.m */,
-				778E765216EB5D0F001B859D /* IIViewDeckController.h */,
-				778E765316EB5D0F001B859D /* IIViewDeckController.m */,
+				77745C24172D57C30017F4E1 /* viewdeck */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 				778E760E16EB5542001B859D /* Sources */,
 				778E760F16EB5542001B859D /* Frameworks */,
 				778E761016EB5542001B859D /* Resources */,
+				77745C23172D54AE0017F4E1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -335,6 +344,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		77745C23172D54AE0017F4E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = XcodeCoverage/exportenv.sh;
+		};
 		778E763616EB5542001B859D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,14 +380,14 @@
 				778E762216EB5542001B859D /* main.m in Sources */,
 				778E762616EB5542001B859D /* AppDelegate.m in Sources */,
 				778E762F16EB5542001B859D /* CenterController.m in Sources */,
-				778E765416EB5D0F001B859D /* IIViewDeckController.m in Sources */,
-				778E765716EB5D58001B859D /* IIWrapController.m in Sources */,
 				7761641F16F60F0F0087B58A /* LeftViewController.m in Sources */,
 				7761642416F60F510087B58A /* RightViewController.m in Sources */,
 				77B3CC7816FDF2FD000D2744 /* Model.xcdatamodeld in Sources */,
 				77B3CC8216FDF94C000D2744 /* Lens+addons.m in Sources */,
 				77B3CC8B16FDF9EE000D2744 /* Lens.m in Sources */,
 				77B3CC8E16FDF9EE000D2744 /* LensRemovedDays.m in Sources */,
+				77745C29172D57D40017F4E1 /* IIViewDeckController.m in Sources */,
+				77745C2A172D57D40017F4E1 /* IIWrapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +497,8 @@
 		778E764B16EB5543001B859D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Get them out/Get them out-Prefix.pch";
 				INFOPLIST_FILE = "Get them out/Get them out-Info.plist";
@@ -486,6 +510,7 @@
 		778E764C16EB5543001B859D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Get them out/Get them out-Prefix.pch";
 				INFOPLIST_FILE = "Get them out/Get them out-Info.plist";
