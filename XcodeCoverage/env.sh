@@ -1,0 +1,5 @@
+export BUILT_PRODUCTS_DIR="/Users/kraag22/Library/Developer/Xcode/DerivedData/Get_them_out-avmpxrlnaoulstegvnaazhtluqik/Build/Products/Debug-iphonesimulator"
+export CURRENT_ARCH="i386"
+export OBJECT_FILE_DIR_normal="/Users/kraag22/Library/Developer/Xcode/DerivedData/Get_them_out-avmpxrlnaoulstegvnaazhtluqik/Build/Intermediates/Get them out.build/Debug-iphonesimulator/Get them out.build/Objects-normal"
+export OBJROOT="/Users/kraag22/Library/Developer/Xcode/DerivedData/Get_them_out-avmpxrlnaoulstegvnaazhtluqik/Build/Intermediates"
+export SRCROOT="/Users/kraag22/projects/iOS/Get them out"
